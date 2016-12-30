@@ -1,0 +1,29 @@
+##########GLOBAL VARIABLES################
+d_file = 'init.xml' #data file name 
+steps = 50 # number of steps for MD run
+rs_d_file = 'random.rS'# restart file name
+dim = '2' #dimension of simulation
+thermo = 10000 # how often to output thermo variable (HOOMD)
+dump = 10000 # how often to dump to lammps trajectory (HOOMD)
+temp = 0.5 #temperature in kelvin
+tstep = 0.005 # timestep in units picked (default: fs)
+rS = 100000  # how often to write restart
+rounds = 0 #round number of simulations 
+max_inter = 10000 # number of rounds to be run total
+append_count = 0 #whether to append or then write, switch 
+dSig = 0.15 #alloed difference in sigman,used in EorS()
+dEps = 0.1 #ten percent ,used in EorS()
+dAng = 18 #allowed difference in angle,used in EorS()
+dLen = 0.25 #allowe difference in len, used in EorS()
+sig = [1.0,1.0,1.0] #sigma values!!!!!!!!!!!!!!!!!!!
+eps = [0.1,0.1,0.1] #epsilon values !!!!!!!!!!!!!!!!
+old_sig=[1.0,1.0,1.0]
+old_eps=[0.1,0.1,0.1]
+angle = 58.412 #angle of the paramers 
+length = [0.875,1.125] #lengths 
+old_angle = 60.0 
+old_length = [1.0,1.0]
+kT = 0.164128483697 #EVOLUTIONARY TEMPERATURE
+old_dEng = 0
+accept = 0
+##########################################
